@@ -34,7 +34,6 @@ img{
 }
 body{
     color: var(--text-color);
-    background: red;
 }
 header{
     position: fixed;
