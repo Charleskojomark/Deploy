@@ -10,7 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
+import pymysql
 from pathlib import Path
+pymysql.install_as_MySQLdb()
+import dj_database_url
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +29,7 @@ SECRET_KEY = 'django-insecure-a0ih#6-8@%qg!j$rswgoyk8b58o+hvd$m6*_aj8mabx8baol)3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ojmelectrical.com','ojmelectrical.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['www.ojmelectrical.com','ojmelectrical.com','localhost','127.0.0.1']
 
 
 # Application definition
